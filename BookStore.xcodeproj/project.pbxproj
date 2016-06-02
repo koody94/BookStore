@@ -15,6 +15,7 @@
 		CA071C2D1CFED23600316259 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071C2C1CFED23600316259 /* Book.swift */; };
 		CA3D1DA21CFFC96D00F6B64E /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D1DA11CFFC96D00F6B64E /* BookTableViewCell.swift */; };
 		CA3D1DA41CFFD79900F6B64E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D1DA31CFFD79900F6B64E /* DetailViewController.swift */; };
+		CA3D1DA61CFFF1A200F6B64E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D1DA51CFFF1A200F6B64E /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CA071C2C1CFED23600316259 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CA3D1DA11CFFC96D00F6B64E /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		CA3D1DA31CFFD79900F6B64E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CA3D1DA51CFFF1A200F6B64E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				CA071C2A1CFECEB300316259 /* BookTableViewController.swift */,
 				CA3D1DA11CFFC96D00F6B64E /* BookTableViewCell.swift */,
 				CA3D1DA31CFFD79900F6B64E /* DetailViewController.swift */,
+				CA3D1DA51CFFF1A200F6B64E /* WebViewController.swift */,
 				CA071C2C1CFED23600316259 /* Book.swift */,
 				CA071C1C1CFECE2300316259 /* Main.storyboard */,
 				CA071C1F1CFECE2300316259 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3D1DA21CFFC96D00F6B64E /* BookTableViewCell.swift in Sources */,
+				CA3D1DA61CFFF1A200F6B64E /* WebViewController.swift in Sources */,
 				CA071C2B1CFECEB300316259 /* BookTableViewController.swift in Sources */,
 				CA3D1DA41CFFD79900F6B64E /* DetailViewController.swift in Sources */,
 				CA071C191CFECE2300316259 /* AppDelegate.swift in Sources */,
