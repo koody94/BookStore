@@ -62,9 +62,7 @@
 		CA071C171CFECE2300316259 /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
-				CA071C301CFED4C600316259 /* book3.jpg */,
-				CA071C311CFED4C600316259 /* book2.jpg */,
-				CA071C2E1CFED4BE00316259 /* book1.jpg */,
+				CA3D1DA01CFFB5D000F6B64E /* Resource */,
 				CA071C181CFECE2300316259 /* AppDelegate.swift */,
 				CA071C2A1CFECEB300316259 /* BookTableViewController.swift */,
 				CA071C2C1CFED23600316259 /* Book.swift */,
@@ -74,6 +72,16 @@
 				CA071C241CFECE2300316259 /* Info.plist */,
 			);
 			path = BookStore;
+			sourceTree = "<group>";
+		};
+		CA3D1DA01CFFB5D000F6B64E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CA071C301CFED4C600316259 /* book3.jpg */,
+				CA071C311CFED4C600316259 /* book2.jpg */,
+				CA071C2E1CFED4BE00316259 /* book1.jpg */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +310,7 @@
 				CA071C291CFECE2300316259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
