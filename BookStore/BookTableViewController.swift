@@ -15,13 +15,61 @@ class BookTableViewController: UITableViewController, UIAlertViewDelegate {
     @IBAction func showPopup(sender: AnyObject) {
 //        let alert = UIAlertView(title: "선택", message: "항목을 선택하세요", delegate: self, cancelButtonTitle: "취소", otherButtonTitles: "버튼 A","버튼 B","버튼 C")
 //        alert.show()
-        let alert = UIAlertController(title: "알림", message: "샘플", preferredStyle:UIAlertControllerStyle.Alert)
+
+//=======================================================
+//        let alert = UIAlertController(title: "알림", message: "샘플", preferredStyle:UIAlertControllerStyle.Alert)
+//        
+//        let cancelAction = UIAlertAction(title: "취소", style: UIAlertActionStyle.Cancel, handler: nil)
+//        
+//        alert.addAction(cancelAction)
+//        self.presentViewController(alert, animated: true, completion: nil)
+//=======================================================
         
-        let cancelAction = UIAlertAction(title: "취소", style: UIAlertActionStyle.Cancel, handler: nil)
+//        let alert = UIAlertController(title: "", message: "액션시트", preferredStyle: .ActionSheet)
+//        
+//        let cancelAction = UIAlertAction(title: "취소", style: .Cancel, handler: nil)
+////        let saveAction = UIAlertAction(title: "저장", style: .Destructive){
+////            (_) in
+////            print("저장완료!!")
+////        }
+//        
+//        let saveAction = UIAlertAction(title: "저장", style: .Destructive, handler: {
+//            (_) in
+//            print("저장완료!!")
+//        })
+//        
+//        alert.addAction(cancelAction)
+//        alert.addAction(saveAction)
+//        
+//        self.presentViewController(alert, animated: true, completion: nil)
+//=======================================================
+            let alert = UIAlertController(title: "로그인", message: "서비스", preferredStyle: .Alert)
         
-        alert.addAction(cancelAction)
-        self.presentViewController(alert, animated: true, completion: nil)
-    }
+            let cancelAction = UIAlertAction(title: "취소", style: .Cancel, handler: nil)
+        
+            let facebookLogin = UIAlertAction(title: "Facebook", style: .Default, handler: {
+                (action) in
+                print("Facebook")
+            })
+        
+            let kakaoLogin = UIAlertAction(title: "Kakao", style: .Default, handler: {
+                (action) in
+                print("Kakao")
+            })
+        
+            let twitterLogin = UIAlertAction(title: "Twitter", style: .Default, handler: {
+                (action) in
+                print("Twitter")
+            })
+        
+            alert.addAction(cancelAction)
+            alert.addAction(facebookLogin)
+            alert.addAction(kakaoLogin)
+            alert.addAction(twitterLogin)
+        
+            self.presentViewController(alert, animated: true, completion: nil)
+      }
+
     
 //    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
 //        print("Button Index = \(buttonIndex)")
