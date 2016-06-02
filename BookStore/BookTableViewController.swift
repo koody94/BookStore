@@ -43,30 +43,79 @@ class BookTableViewController: UITableViewController, UIAlertViewDelegate {
 //        
 //        self.presentViewController(alert, animated: true, completion: nil)
 //=======================================================
-            let alert = UIAlertController(title: "로그인", message: "서비스", preferredStyle: .Alert)
+//            let alert = UIAlertController(title: "로그인", message: "서비스", preferredStyle: .Alert)
+//        
+//            let cancelAction = UIAlertAction(title: "취소", style: .Cancel, handler: nil)
+//        
+//            let facebookLogin = UIAlertAction(title: "Facebook", style: .Default, handler: {
+//                (action) in
+//                print("Facebook")
+//            })
+//        
+//            let kakaoLogin = UIAlertAction(title: "Kakao", style: .Default, handler: {
+//                (action) in
+//                print("Kakao")
+//            })
+//        
+//            let twitterLogin = UIAlertAction(title: "Twitter", style: .Default, handler: {
+//                (action) in
+//                print("Twitter")
+//            })
+//        
+//            alert.addAction(cancelAction)
+//            alert.addAction(facebookLogin)
+//            alert.addAction(kakaoLogin)
+//            alert.addAction(twitterLogin)
+//        
+//            self.presentViewController(alert, animated: true, completion: nil)
+//=======================================================
+//            let alert = UIAlertController(title: "입력", message: "이름을 입력하시오", preferredStyle: .Alert)
+//        
+//            alert.addTextFieldWithConfigurationHandler({(textField) in
+//                textField.placeholder = "이름"
+//            })
+//        
+//            let cancelAction = UIAlertAction(title: "취소", style: .Cancel, handler: nil)
+//        
+//            let okAction = UIAlertAction(title: "확인", style: .Default, handler: {
+//                (_) in
+//                if let name = alert.textFields?[0].text{
+//                    print("name = \(name)")
+//                }
+//            })
+//        
+//            alert.addAction(cancelAction)
+//            alert.addAction(okAction)
+//        
+//            self.presentViewController(alert, animated: true, completion: nil)
+//=======================================================
+            let alert = UIAlertController(title: "로그인", message: "로그인 정보를 입력하세요", preferredStyle: .Alert)
+        
+            alert.addTextFieldWithConfigurationHandler({(textField) in
+                textField.placeholder = "아이디"
+            })
+        
+            alert.addTextFieldWithConfigurationHandler({(textField) in
+                textField.placeholder = "비밀번호"
+                textField.secureTextEntry = true
+            })
         
             let cancelAction = UIAlertAction(title: "취소", style: .Cancel, handler: nil)
         
-            let facebookLogin = UIAlertAction(title: "Facebook", style: .Default, handler: {
-                (action) in
-                print("Facebook")
-            })
-        
-            let kakaoLogin = UIAlertAction(title: "Kakao", style: .Default, handler: {
-                (action) in
-                print("Kakao")
-            })
-        
-            let twitterLogin = UIAlertAction(title: "Twitter", style: .Default, handler: {
-                (action) in
-                print("Twitter")
+            let okAction = UIAlertAction(title: "확인", style: .Default, handler: {
+                (_) in
+                if let name = alert.textFields?[0].text{
+                    print("id = \(name)")
+                }
+                
+                if let password = alert.textFields?[1].text{
+                    print("passwd = \(password)")
+                }
             })
         
             alert.addAction(cancelAction)
-            alert.addAction(facebookLogin)
-            alert.addAction(kakaoLogin)
-            alert.addAction(twitterLogin)
-        
+            alert.addAction(okAction)
+                
             self.presentViewController(alert, animated: true, completion: nil)
       }
 
