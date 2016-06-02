@@ -8,9 +8,24 @@
 
 import UIKit
 
-class BookTableViewController: UITableViewController {
+class BookTableViewController: UITableViewController, UIAlertViewDelegate {
 
     var books = [Book]()
+    
+    @IBAction func showPopup(sender: AnyObject) {
+//        let alert = UIAlertView(title: "선택", message: "항목을 선택하세요", delegate: self, cancelButtonTitle: "취소", otherButtonTitles: "버튼 A","버튼 B","버튼 C")
+//        alert.show()
+        let alert = UIAlertController(title: "알림", message: "샘플", preferredStyle:UIAlertControllerStyle.Alert)
+        
+        let cancelAction = UIAlertAction(title: "취소", style: UIAlertActionStyle.Cancel, handler: nil)
+        
+        alert.addAction(cancelAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+//    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+//        print("Button Index = \(buttonIndex)")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

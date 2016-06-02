@@ -61,7 +61,13 @@
                             <outlet property="delegate" destination="coo-z2-nvI" id="wL1-EP-I77"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Main" id="KLZ-DV-a1O"/>
+                    <navigationItem key="navigationItem" title="Main" id="KLZ-DV-a1O">
+                        <barButtonItem key="rightBarButtonItem" title="Popup" id="uqD-Av-pUK">
+                            <connections>
+                                <action selector="showPopup:" destination="coo-z2-nvI" id="njK-aX-Ozg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVe-cu-7JY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
