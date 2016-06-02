@@ -128,10 +128,10 @@ class BookTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let detailVC = segue.destinationViewController as? DetailViewController
-        
-        let bookIndex = self.tableView.indexPathForCell(sender as! UITableViewCell)
-        
-        detailVC?.book = books[bookIndex!.row]//books[(bookIndex?.row)!]
+        if segue.identifier == "book_detail"{
+            let detailVC = segue.destinationViewController as? DetailViewController
+            let bookIndex = self.tableView.indexPathForCell(sender as! UITableViewCell)
+            detailVC?.book = books[bookIndex!.row]//books[(bookIndex?.row)!]
+        }
     }
 }

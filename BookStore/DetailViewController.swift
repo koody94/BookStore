@@ -22,6 +22,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         if let tmpBook = book{
+            
+            self.navigationItem.title = tmpBook.title
             bookCover.image = UIImage(named: tmpBook.coverImage!)
             bookWriter.text = tmpBook.writer
             bookPublisher.text = tmpBook.publisher

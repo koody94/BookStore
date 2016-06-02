@@ -52,7 +52,7 @@
                                     <outlet property="bookPublisher" destination="egT-tu-s7n" id="3nn-4Y-p3X"/>
                                     <outlet property="bookTitle" destination="bVJ-MO-WYs" id="X0y-Jm-4Jn"/>
                                     <outlet property="bookWriter" destination="K26-q1-BIg" id="Oh0-VN-YfI"/>
-                                    <segue destination="IYp-Yf-Xas" kind="show" id="Bvw-Ve-XuQ"/>
+                                    <segue destination="IYp-Yf-Xas" kind="show" identifier="book_detail" id="Bvw-Ve-XuQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
